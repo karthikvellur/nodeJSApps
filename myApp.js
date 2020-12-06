@@ -1,55 +1,15 @@
 var express = require('express');
 var app = express();
 
-
-process.env.MESSAGE_STYLE="uppercase";
-
-console.log(process.env.MESSAGE_STYLE);
-
-const msg = "Hello Json";
-
-app.get("/json", (req, res) => {
-  if(process.env.MESSAGE_STYLE === "uppercase"){
-        res.json({
-      message: msg.toUpperCase()
-    });
-  } else{
-      res.json({
-      message: msg
-    });
+app.get("/now",
+  (req, res, next) => {
+    req.time = new Date().toString();
+    next();
+  },
+  (req, res) => {
+    res.send({time: req.time});
   }
-});
+)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- module.exports = app;
+module.exports = app;
