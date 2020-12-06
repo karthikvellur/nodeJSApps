@@ -2,7 +2,7 @@ dependencies:
   body-parser: 1.19.0
   cookie-parser: 1.4.5
   express: 4.17.1
-  fcc-express-bground: github.com/freeCodeCamp/fcc-express-bground-pkg/105588834ca467f887b99166244f1de62a84cdb8
+  fcc-express-bground: github.com/lasjorg/fcc-express-bground-pkg-LJ/7fb964c6d69bab26b9faa697a78e696f6d6aef77
 packages:
   /accepts/1.3.7:
     dependencies:
@@ -401,11 +401,11 @@ packages:
       node: '>= 0.8'
     resolution:
       integrity: sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-  github.com/freeCodeCamp/fcc-express-bground-pkg/105588834ca467f887b99166244f1de62a84cdb8:
+  github.com/lasjorg/fcc-express-bground-pkg-LJ/7fb964c6d69bab26b9faa697a78e696f6d6aef77:
     dev: false
     name: fcc-express-bground
     resolution:
-      tarball: 'https://codeload.github.com/freeCodeCamp/fcc-express-bground-pkg/tar.gz/105588834ca467f887b99166244f1de62a84cdb8'
+      tarball: 'https://codeload.github.com/lasjorg/fcc-express-bground-pkg-LJ/tar.gz/7fb964c6d69bab26b9faa697a78e696f6d6aef77'
     version: 0.0.5
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
@@ -414,4 +414,4 @@ specifiers:
   body-parser: ^1.15.2
   cookie-parser: ^1.4.3
   express: ^4.14.0
-  fcc-express-bground: 'git+https://github.com/freeCodeCamp/fcc-express-bground-pkg.git'
+  fcc-express-bground: 'git+https://github.com/lasjorg/fcc-express-bground-pkg-LJ.git'
