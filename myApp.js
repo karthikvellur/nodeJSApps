@@ -1,16 +1,26 @@
 var express = require('express');
 var app = express();
 
-const middleware = (req, res, next) => {
-  req.time = new Date().toString();
-  next();
-};
 
-app.get("/now", middleware, (req, res) => {
-  res.send({
-    time: req.time
-  });
+process.env.MESSAGE_STYLE="uppercase";
+
+console.log(process.env.MESSAGE_STYLE);
+
+const msg = "Hello Json";
+
+app.get("/json", (req, res) => {
+  if(process.env.MESSAGE_STYLE === "uppercase"){
+        res.json({
+      message: msg.toUpperCase()
+    });
+  } else{
+      res.json({
+      message: msg
+    });
+  }
 });
+
+
 
 
 
